@@ -1,0 +1,6 @@
+[Unit]
+Description=Чистка вложений клиентов старше срока хранения (__SLUG__)
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/env bash /opt/__SLUG__/bin/cleanup-inbox.sh

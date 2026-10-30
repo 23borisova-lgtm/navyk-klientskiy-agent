@@ -1,0 +1,9 @@
+[Unit]
+Description=Ежедневная чистка вложений клиентов (__SLUG__)
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+
+[Install]
+WantedBy=timers.target

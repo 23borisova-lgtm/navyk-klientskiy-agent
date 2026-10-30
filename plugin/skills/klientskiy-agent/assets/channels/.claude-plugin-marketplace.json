@@ -1,0 +1,9 @@
+{
+  "name": "__MKT_NAME__",
+  "owner": { "name": "__OWNER__" },
+  "metadata": { "description": "Канал-плагины для клиентского агента" },
+  "plugins": [
+    { "name": "tg", "source": "./tg", "description": "Канал Telegram с политикой open — бот отвечает незнакомым людям." },
+    { "name": "max", "source": "./max", "description": "Канал MAX с политикой open." }
+  ]
+}

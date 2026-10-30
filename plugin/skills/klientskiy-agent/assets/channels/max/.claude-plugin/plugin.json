@@ -1,0 +1,6 @@
+{
+  "name": "max",
+  "description": "Канал MAX (max.ru) для Claude Code — личка и чаты бота MAX со списком доступа, pairing, вложениями и авторасшифровкой голосовых. Настройка: ~/.claude/channels/max/.env и access.json.",
+  "version": "0.1.0",
+  "keywords": ["max", "max.ru", "messaging", "channel", "mcp"]
+}

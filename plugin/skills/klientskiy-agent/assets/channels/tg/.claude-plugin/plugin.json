@@ -1,0 +1,6 @@
+{
+  "name": "tg",
+  "description": "Канал Telegram для Claude Code с политикой open — бот отвечает незнакомым людям, а не просит код у владельца. Личка и группы, список доступа, вложения, авторасшифровка голосовых. Настройка: ~/.claude/channels/tg/.env и access.json.",
+  "version": "0.1.0",
+  "keywords": ["telegram", "messaging", "channel", "clients", "mcp"]
+}

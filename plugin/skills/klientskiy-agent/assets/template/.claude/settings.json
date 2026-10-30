@@ -1,0 +1,36 @@
+{
+  "_комментарий": "Права агента. Запуск идёт в режиме dontAsk: разрешено РОВНО то, что перечислено в allow. Без этого файла служба будет зелёной, а агент не сможет ни ответить, ни передать заявку — он молча упрётся в запрос разрешения, отвечать на который некому. Пути в правилах пишутся с двойным слэшем: Read(//opt/...), иначе правило игнорируется.",
+  "enabledPlugins": {
+    "tg@__MKT_NAME__": true,
+    "max@__MKT_NAME__": true
+  },
+  "permissions": {
+    "allow": [
+      "mcp__plugin_tg_tg__reply",
+      "mcp__plugin_tg_tg__typing",
+      "mcp__plugin_tg_tg__download_attachment",
+      "mcp__plugin_max_max__reply",
+      "mcp__plugin_max_max__typing",
+      "mcp__plugin_max_max__download_attachment",
+      "Read(//opt/__SLUG__/**)",
+      "Grep",
+      "Glob",
+      "Edit(//opt/__SLUG__/memory/**)",
+      "Bash(python3 /opt/__SLUG__/bin/notify.py --lead:*)",
+      "Bash(python3 /opt/__SLUG__/bin/notify.py --urgent:*)",
+      "Bash(python3 /opt/__SLUG__/bin/crm_lead.py:*)"
+    ],
+    "deny": [
+      "Read(//opt/**/.env)",
+      "Read(//root/.claude/channels/**)",
+      "Read(//root/.claude/.credentials.json)",
+      "Read(//opt/__SLUG__/.claude/settings.json)",
+      "Read(//opt/__SLUG__/logs/**)",
+      "Edit(//opt/__SLUG__/CLAUDE.md)",
+      "Edit(//opt/__SLUG__/knowledge/**)",
+      "Edit(//opt/__SLUG__/bin/**)",
+      "Edit(//opt/__SLUG__/.claude/**)",
+      "Edit(//root/.claude/channels/**)"
+    ]
+  }
+}

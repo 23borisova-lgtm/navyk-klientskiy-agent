@@ -1,0 +1,14 @@
+[Unit]
+Description=Помощник __BIZ__ CCC - Claude Code Channels в Telegram и MAX (клиенты)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=forking
+ExecStart=/opt/__SLUG__/bin/start-channels.sh
+ExecStop=-/usr/bin/tmux -L __SLUG__-ccc kill-session -t channels
+Restart=on-failure
+RestartSec=60
+
+[Install]
+WantedBy=multi-user.target
